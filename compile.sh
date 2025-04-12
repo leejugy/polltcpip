@@ -1,3 +1,5 @@
+export CFLAGS=""
+
 export SERVER_TARGET="server"
 export CLIENT_TARGET="client"
 

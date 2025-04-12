@@ -183,7 +183,7 @@ void send_client(int client_index, uint8_t *send_buf, size_t send_size)
         return;
     }
 
-    else if (client_poll[client_index].revents & POLLNVAL ||
+    if (client_poll[client_index].revents & POLLNVAL ||
         client_poll[client_index].revents & POLLHUP)
     {
         DEBUG("close client [%d]", client_index);
@@ -196,7 +196,7 @@ void send_client(int client_index, uint8_t *send_buf, size_t send_size)
         client_connect_flag[client_index] = CLIENT_CONNECTED_NONE;
     }
 
-    if (client_poll[client_index].revents & POLLOUT)
+    else if (client_poll[client_index].revents & POLLOUT)
     {
         if (send(client_poll[client_index].fd, send_buf, send_size, POLL_TIMEOUT_CNT) < 0)
         {
