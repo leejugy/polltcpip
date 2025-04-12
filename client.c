@@ -191,7 +191,7 @@ void send_client(int client_index, uint8_t *send_buf, size_t send_size)
         client_poll[client_index].fd = socket(AF_INET, SOCK_STREAM, 0);
         if(client_poll[client_index].fd < 0)
         {
-            perror("fail to socket at recv client");
+            perror("fail to socket at send client");
         }
         client_connect_flag[client_index] = CLIENT_CONNECTED_NONE;
     }
