@@ -1,4 +1,4 @@
-source /opt/frdm-imx93/environment-setup-armv8a-poky-linux
+source /opt/gcc-beaglebone/environment-setup-armv7at2hf-neon-poky-linux-gnueabi
 
 export CFLAGS=""
 export CPPFLAGS=""
