@@ -225,7 +225,7 @@ static void thread_client()
     while (1)
     {
         sleep(1);
-        connect_client(CLIENT_LOCAL_ADDRESS, COMMON_PORT);
+        connect_client(CLIENT_CONNECT_ADDRESS, COMMON_PORT);
 
         for (loop = 0; loop < CLIENT_NUMBER; loop++)
         {

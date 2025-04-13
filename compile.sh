@@ -1,4 +1,8 @@
+source /opt/frdm-imx93/environment-setup-armv8a-poky-linux
+
 export CFLAGS=""
+export CPPFLAGS=""
+export LDFLAGS=""
 
 export SERVER_TARGET="server"
 export CLIENT_TARGET="client"

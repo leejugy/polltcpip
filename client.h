@@ -16,7 +16,7 @@ typedef enum
 
 #define CLIENT_NUMBER 2
 #define CLIENT_LOCAL_ADDRESS "127.0.0.1"
-#define USER_ADDRESS "2.3.4.5"
+#define CLIENT_CONNECT_ADDRESS "2.3.4.5"
 
 int init_client();
 int connect_client(char *connect_addr, int port);
