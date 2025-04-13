@@ -111,7 +111,7 @@ int accept_server()
 
 static void process_recv_server(int loop, uint8_t *recv_buf, size_t recv_size)
 {
-    DEBUG("SERVER[%d] recv : \"%s\", size %ld", loop, recv_buf, recv_size);
+    DEBUG("SERVER[%d] recv : \"%s\", size %d", loop, recv_buf, recv_size);
 }
 
 void recv_server()

@@ -88,7 +88,7 @@ int connect_client(char *connect_addr, int port)
 
 static void process_recv_client(int loop, uint8_t *recv_buf, size_t recv_size)
 {
-    DEBUG("CLIENT[%d] recv : \"%s\", size %ld", loop, recv_buf, recv_size);
+    DEBUG("CLIENT[%d] recv : \"%s\", size %d", loop, recv_buf, recv_size);
 }
 
 void recv_client()
